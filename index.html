@@ -21,7 +21,7 @@
                 format scalabil (svg), iar pentru a eficientiza imaginea se recomanda https://squoosh.app/,
                 putem seta dimensiunile prin atribute (height, width)
                 -->
-                <img src="images/logo.svg" alt="BarberShop" height="55.46px" />
+                <img src="images/logo.svg" alt="BarberShop" height="55.46" />
             </a>
             <!-- Sectiunea nav, trebuie sa contina doar link-urile pentru navigatie -->
             <nav>
@@ -30,9 +30,13 @@
                 <ul>
                     <!-- Vom adauga valoare pentru href atunci cand avem create si restul paginilor  -->
                     <li><a href="about.html">About</a></li>
-                    <li><a href="">Services and prices</a></li>
-                    <li><a href="">Barbers</a></li>
-                    <li><a href="">Contacts</a></li>
+                    <li>
+                        <a href="services_and_prices.html"
+                            >Services and prices</a
+                        >
+                    </li>
+                    <li><a href="barbers.html">Barbers</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
                 </ul>
             </nav>
             <!-- Pentru telefon, exista o metoda de a forma numarul, folosind tel:+01234 pentru asta -->
@@ -67,21 +71,32 @@
             </a>
 
             <!-- Sectiunea pentru link-uri spre Youtube/Facebook -->
-            <section>
-                <a
-                    href="https://www.youtube.com"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    >Youtube</a
-                >
-                <a
-                    href="https://www.facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    >Facebook</a
-                >
-                <img src="images/dash_navigation-links.png" />
-            </section>
+            <div>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.youtube.com"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            >Youtube</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.facebook.com"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            >Facebook</a
+                        >
+                    </li>
+                    <li>
+                        <img
+                            src="images/dash_navigation-links.png"
+                            alt="Dash"
+                        />
+                    </li>
+                </ul>
+            </div>
         </header>
         <!--
             Avantaje main vs div:
@@ -124,7 +139,9 @@
                 />
                 <img src="images/barber-img-2.png" alt="Frizer taie cu lama" />
 
-                <span><img src="images/dash_about.png" /> About</span>
+                <span
+                    ><img src="images/dash_about.png" alt="Dash" /> About</span
+                >
                 <h2>Best Barbershop in your city</h2>
                 <h3>
                     If you want to add more confidence to your image, you should
@@ -188,7 +205,7 @@
                 <button>Book a Service</button>
             </section>
 
-            <section>
+            <div>
                 <ul>
                     <li>
                         <span>600</span>
@@ -219,7 +236,7 @@
                         see and feel 1 time than to read 10 times.
                     </p>
                 </article>
-            </section>
+            </div>
 
             <section>
                 <h3>for true connoisseurs of the atmosphere</h3>
@@ -236,6 +253,7 @@
                 <span>Michele Doe</span>
                 <br />
                 <em>Extreme Barber</em>
+                <br />
                 <img src="images/barber_AB.png" alt="Alan Black" />
                 <br />
                 <span>Alan Black</span>
@@ -290,17 +308,17 @@
                                 >barbershop@email.com</a
                             >
                         </li>
-                        <li><h3>working hours</h3></li>
-                        <li>
-                            <p>
-                                Daily from <time>9:00</time>AM till<time
-                                    >22:00</time
-                                >
-                                PM
-                            </p>
-                        </li>
                     </ul>
                 </address>
+                <div>
+                    <h3>WORKING HOURS</h3>
+
+                    <p>
+                        Daily from <time datetime="9:00">9:00</time> AM till
+                        <time datetime="22:00">22:00</time>
+                        PM
+                    </p>
+                </div>
             </section>
         </main>
         <!--
@@ -308,5 +326,13 @@
         seama ca ceva e gresit, e ca nu se va 'auto-formata' continutul de Prettier daca avem greseli
         -->
     </body>
-    <footer></footer>
+    <footer>
+        <div>
+            <ul>
+                <li>&#169; Copyright 2022</li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="https://www.youtube.com/">Youtube</a></li>
+            </ul>
+        </div>
+    </footer>
 </html>
